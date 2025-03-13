@@ -1,0 +1,118 @@
+/*Hoja de estilos externos*/
+body 
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+    position: relative;   
+}
+
+header
+{
+    padding: 40px 0;
+    text-align: center;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/001/230/968/large_2x/starry-night-sky-free-photo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -30vh;
+}
+
+h1 
+{
+    margin: 0px;
+    font-size: 36px;
+    color: #fff;
+}
+
+h2
+{
+    margin: 0px;
+    font-size: 25px;
+    color: #fff;
+}
+
+.contenedor
+{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+
+a 
+{
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+a:hover 
+{
+    background-color: black;
+}
+
+table
+{
+	position: relative;
+    width: 90%;
+    top: 2vh;
+    margin: auto;
+    border: 1px solid white;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+    background-color: #333;
+}
+
+th, td
+{
+    border: 1px solid white;
+}
+
+li a
+{
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+li a:hover
+{
+    background-color: black;
+}
+
+table tr:nth-child(odd)
+{
+    background-color: #031157;
+}
+
+table tr:ntr-child(even)
+{
+    background-color: #333;
+}
+
+th
+{
+    background-color: #333;
+    color: white;
+    padding: 14px;
+}
+
+td
+{
+    padding: 12px;
+    text-align: justify;
+}
+
+table tr:hover
+{
+    background-color: black;
+    color: white;
+}
+
+footer
+{
+    position: relative;
+    top: 2vh;
+}

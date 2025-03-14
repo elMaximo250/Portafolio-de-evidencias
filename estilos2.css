@@ -1,0 +1,97 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+    position: relative;
+    
+}
+
+header
+{
+    padding: 40px 0;
+    text-align: center;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/001/230/968/large_2x/starry-night-sky-free-photo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -30vh;
+}
+
+h1 
+{
+    margin: 0px;
+    font-size: 50px;
+    color: #fff;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+h2
+{
+    margin: 0px;
+    font-size: 25px;
+    color: #fff;
+}
+
+a 
+{
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+a:hover 
+{
+    background-color: black;
+}
+
+.menu 
+{
+    width: 15vw;
+    border-radius: 10px;
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+    position: fixed;
+    top: 8vh;
+    left: 2vw;
+    text-align: left;
+    z-index: 5;
+}
+
+ ul 
+{
+    list-style-type: none;
+    font-family: Verdana;
+    position: relative;
+    left: -4.6vh;
+    width: 15vw;
+}
+
+.menu a 
+{
+    text-decoration: none;
+}
+
+.menu a:hover 
+{
+    background-color: black;
+}
+
+li a 
+{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+li a.activo
+{
+    background-color: #031157;
+}
+
+.capa1
+{
+    margin-left: 20%;
+    padding: 12px;
+    height: 1000px;
+}

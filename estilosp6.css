@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+}
+
+header {
+    padding: 60px 0;
+    text-align: center;
+    background-image: url(https://images.axios.com/knsqCzAUJasO2gvNeJIT75g36-k=/0x580:5568x3712/1920x1080/2018/11/30/1543613757886.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+a img{
+    width: 200px;
+    height: 100px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.menu {
+    width: 200px;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding-top: 60px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    margin: 0;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+    transition: background-color 0.3s;
+    overflow: auto;
+}
+
+.menu ul li a:hover {
+    background-color: #555;
+}
+
+.menu ul li a.activo {
+    background-color: #0078d4;
+}
+
+.capa1 {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.capa1 h2 {
+    color: #0078d4;
+}
+
+.capa1 p {
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+table {
+    text-align: center;
+    margin: auto; 
+    border-collapse: collapse;
+}
+
+td {
+    padding: 20px;
+    vertical-align: middle;
+}
+
+td img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+td img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); 
+}

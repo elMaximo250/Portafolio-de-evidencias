@@ -1,0 +1,71 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    background-color: rgba(70, 70, 70, 1.0);
+    color: white;
+}
+
+.contenedor 
+{
+    position: relative;
+    top: 75px;
+    background: black;
+    height: 150px;
+    font-family: Arial, sans-serif;
+}
+
+.Capa1 
+{
+    position: relative;
+    height: 50px;
+    left: 50px;
+    top: 25px;
+    background: blue; 
+    font-family: Arial, sans-serif;
+}
+
+.Capa2 
+{
+    position: absolute;
+    background: green;
+    right: 50px;
+    z-index: 2;
+    height: 100px;
+    width: 150px;
+    font-family: Arial, sans-serif;
+}
+
+.Capa3 
+{
+    position: absolute;
+    background: red;
+    width: 150px;
+    height: 150px;
+    z-index: 1;
+    font-family: Arial, sans-serif;
+}
+
+.Capa4 
+{
+    position: absolute;
+    background: darkorange; 
+    width: 250px;
+    height: 200px;
+    top: 120px;
+    left: 50px;
+    z-index: 3;
+    font-family: Arial, sans-serif;
+}
+
+.Capa5 
+{
+    border: 2px solid #9C27B0; 
+    width: 200px;
+    height: 50px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 4;
+    background: darkmagenta;
+    font-family: Arial, sans-serif;
+}

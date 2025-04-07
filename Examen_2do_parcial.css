@@ -1,0 +1,120 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+    position: relative;
+}
+
+header
+{
+    padding: 40px 0;
+    text-align: center;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/001/230/968/large_2x/starry-night-sky-free-photo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -30vh;
+}
+
+h1 
+{
+    margin: 0px;
+    font-size: 36px;
+    color: #fff;
+}
+
+h2
+{
+    margin: 0px;
+    font-size: 25px;
+    color: #fff;
+}
+
+a 
+{
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+a:hover 
+{
+    background-color: black;
+}
+
+.galeria
+{
+    position: relative;
+    text-align: center;
+    top: 10vh;
+    left: 5vw;
+}
+
+.boton
+{
+    position: relative;
+    text-align: center;
+    top: 3vh;
+}
+
+.boton input[type="button"]
+{
+    width: auto;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.boton input[type="button"]:hover
+{
+    background-color: #fff;
+    color: #222;
+}
+
+.boton input[type="button"]:focus
+{
+    background-color: gray;
+}
+
+.boton:hover ~ .galeria .imagen
+{
+    display: none;
+}
+
+.boton label
+{
+    display: none;
+}
+
+.galeria
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between vw;
+    align-items: center;
+}
+
+.galeria div
+{
+    background-color: lightblue;
+    width: 150px;
+    padding: 15px;
+    margin: 50px;
+    line-height: 10px;
+    text-align: center;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+}
+
+.imagen img
+{
+   width: 150px; 
+   height: 150px;
+}

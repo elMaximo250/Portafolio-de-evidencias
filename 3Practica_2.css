@@ -1,0 +1,100 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+    position: relative;
+}
+
+header 
+{
+    padding: 40px 0;
+    text-align: center;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/001/230/968/large_2x/starry-night-sky-free-photo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -30vh;
+}
+
+h1 
+{
+    margin: 0px;
+    font-size: 36px;
+    color: #fff;
+}
+
+h2 
+{
+    margin: 0px;
+    font-size: 25px;
+    color: #fff;
+}
+
+a 
+{
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+a:hover 
+{
+    background-color: black;
+}
+
+form 
+{
+    margin: 20px;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 8px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label 
+{
+    display: inline-block;
+    width: 100px;
+    margin: 10px 0;
+}
+
+input[type="text"],
+input[type="password"],
+select 
+{
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: white;
+}
+
+input[type="button"] 
+{
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="button"]:hover 
+{
+    background-color: #45a049;
+}
+
+#resultado 
+{
+    margin: 20px;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 8px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}

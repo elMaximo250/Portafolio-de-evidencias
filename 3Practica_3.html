@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnóstico de Astronomía Básica</title>
+    <link rel="stylesheet" type="text/css" href="3Practica_3.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Diagnóstico de Astronomía Básica</h1>
+        <h2>Descubre cuánto sabes sobre el universo</h2>
+    </header>
+    
+    <div class="main-content">
+        <div class="form-container">
+            <form id="astronomyQuiz">
+                <div class="question">
+                    <h3>1. ¿Cuál es el planeta más grande del sistema solar?</h3>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" name="q1" id="q1a" value="a">
+                            <label for="q1a">a) Tierra</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q1" id="q1b" value="b">
+                            <label for="q1b">b) Júpiter</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q1" id="q1c" value="c">
+                            <label for="q1c">c) Marte</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q1" id="q1d" value="d">
+                            <label for="q1d">d) Saturno</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <h3>2. ¿Qué es una galaxia?</h3>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" name="q2" id="q2a" value="a">
+                            <label for="q2a">a) Un sistema planetario con una estrella central</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q2" id="q2b" value="b">
+                            <label for="q2b">b) Un conjunto de estrellas, nubes de gas, planetas y materia oscura unidos por gravedad</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q2" id="q2c" value="c">
+                            <label for="q2c">c) Un tipo de nebulosa donde nacen las estrellas</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q2" id="q2d" value="d">
+                            <label for="q2d">d) Un agujero negro supermasivo</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <h3>3. ¿Qué es un año luz?</h3>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" name="q3" id="q3a" value="a">
+                            <label for="q3a">a) El tiempo que tarda la Tierra en orbitar al Sol</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q3" id="q3b" value="b">
+                            <label for="q3b">b) La distancia que recorre la luz en un año</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q3" id="q3c" value="c">
+                            <label for="q3c">c) Una medida de brillo estelar</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q3" id="q3d" value="d">
+                            <label for="q3d">d) El periodo de vida de una estrella</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <h3>4. ¿Cuál es la estrella más cercana a la Tierra?</h3>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" name="q4" id="q4a" value="a">
+                            <label for="q4a">a) Alpha Centauri</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q4" id="q4b" value="b">
+                            <label for="q4b">b) Sirio</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q4" id="q4c" value="c">
+                            <label for="q4c">c) El Sol</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q4" id="q4d" value="d">
+                            <label for="q4d">d) Polaris</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="question">
+                    <h3>5. ¿Qué causa las fases de la Luna?</h3>
+                    <div class="options">
+                        <div class="option">
+                            <input type="radio" name="q5" id="q5a" value="a">
+                            <label for="q5a">a) La sombra de la Tierra sobre la Luna</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q5" id="q5b" value="b">
+                            <label for="q5b">b) La rotación de la Luna sobre su eje</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q5" id="q5c" value="c">
+                            <label for="q5c">c) La posición relativa de la Luna respecto al Sol y la Tierra</label>
+                        </div>
+                        <div class="option">
+                            <input type="radio" name="q5" id="q5d" value="d">
+                            <label for="q5d">d) Las nubes en la atmósfera terrestre</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <button type="button" id="submitBtn">Evaluar respuestas</button>
+            </form>
+        </div>
+        
+        <div class="results" id="results">
+            <h2>Resultados del diagnóstico</h2>
+            <div class="score" id="score"></div>
+            
+            <div class="chart-container">
+                <canvas id="resultsChart"></canvas>
+            </div>
+            
+            <div class="feedback" id="feedback"></div>
+            
+            <button type="button" id="generatePdf">Generar PDF de resultados</button>
+        </div>
+    </div>
+    <script>
+        const correctAnswers = 
+{
+    q1: 'b',
+    q2: 'b',
+    q3: 'b',
+    q4: 'c',
+    q5: 'c' 
+};
+
+const explanations = 
+{
+    q1: "Júpiter es el planeta más grande del sistema solar, con una masa dos veces y media la de los demás planetas juntos.",
+    q2: "Una galaxia es un conjunto masivo de estrellas, nubes de gas, planetas, polvo cósmico, materia oscura y energía unidos gravitatoriamente.",
+    q3: "Un año luz es una unidad de distancia que equivale aproximadamente a 9.46 billones de kilómetros (9.46 × 10¹² km).",
+    q4: "El Sol es la estrella más cercana a la Tierra, situada a aproximadamente 149.6 millones de kilómetros (1 unidad astronómica).",
+    q5: "Las fases de la Luna son el resultado de su posición en relación con la Tierra y el Sol, que determina qué parte de la Luna iluminada por el Sol es visible desde la Tierra."
+};
+
+let resultsChart = null;
+
+document.getElementById('submitBtn').addEventListener('click', function() 
+{
+    const form = document.getElementById('astronomyQuiz');
+    const results = document.getElementById('results');
+    const scoreElement = document.getElementById('score');
+    const feedbackElement = document.getElementById('feedback');
+    
+    let score = 0;
+    let feedbackHtml = '<h3>Retroalimentación por pregunta:</h3>';
+
+    for (let i = 1; i <= 5; i++) 
+    {
+        const questionName = 'q' + i;
+        const selectedOption = form.elements[questionName].value;
+        
+        if (!selectedOption) 
+        {
+            feedbackHtml += `<p><span class="incorrect">Pregunta ${i}:</span> No seleccionaste ninguna opción.</p>`;
+            continue;
+        }
+        
+        if (selectedOption === correctAnswers[questionName]) 
+        {
+            score++;
+            feedbackHtml += `<p><span class="correct">Pregunta ${i}:</span> ¡Correcto! ${explanations[questionName]}</p>`;
+        } else {
+            feedbackHtml += `<p><span class="incorrect">Pregunta ${i}:</span> Incorrecto. La respuesta correcta es ${getCorrectAnswerText(questionName)}. ${explanations[questionName]}</p>`;
+        }
+    }
+
+    const percentage = (score / 5) * 100;
+    scoreElement.textContent = `Puntuación: ${score}/5 (${percentage}%)`;
+
+    feedbackElement.innerHTML = feedbackHtml;
+
+    results.style.display = 'block';
+
+    generateChart(score, 5 - score);
+
+    results.scrollIntoView({ behavior: 'smooth' });
+});
+
+function getCorrectAnswerText(questionName) {
+    const questionElement = document.getElementById(questionName + correctAnswers[questionName]);
+    return questionElement.nextElementSibling.textContent;
+}
+
+function generateChart(correctCount, incorrectCount) {
+    const ctx = document.getElementById('resultsChart').getContext('2d');
+
+    if (resultsChart) {
+        resultsChart.destroy();
+    }
+    
+    resultsChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Correctas', 'Incorrectas'],
+            datasets: [{
+                label: 'Respuestas',
+                data: [correctCount, incorrectCount],
+                backgroundColor: [
+                    'rgba(39, 174, 96, 0.7)',
+                    'rgba(231, 76, 60, 0.7)'
+                ],
+                borderColor: [
+                    'rgba(39, 174, 96, 1)',
+                    'rgba(231, 76, 60, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: 5,
+                    ticks: {
+                        stepSize: 1,
+                        color: '#fff'
+                    },
+                    grid: {
+                        color: 'rgba(255, 255, 255, 0.1)'
+                    }
+                },
+                x: {
+                    ticks: {
+                        color: '#fff'
+                    },
+                    grid: {
+                        color: 'rgba(255, 255, 255, 0.1)'
+                    }
+                }
+            },
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Desempeño por tipo de respuesta',
+                    font: {
+                        size: 16
+                    },
+                    color: '#fff'
+                },
+                legend: {
+                    display: false
+                }
+            }
+        }
+    });
+}
+
+document.getElementById('generatePdf').addEventListener('click', function() {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+
+    doc.setFontSize(20);
+    doc.setTextColor(40, 60, 80);
+    doc.text('Resultados del Diagnóstico de Astronomía Básica', 105, 20, { align: 'center' });
+
+    const scoreText = document.getElementById('score').textContent;
+    doc.setFontSize(16);
+    doc.setTextColor(0, 0, 0);
+    doc.text(scoreText, 105, 40, { align: 'center' });
+
+    const chartCanvas = document.getElementById('resultsChart');
+    const chartImage = chartCanvas.toDataURL('image/png');
+    doc.addImage(chartImage, 'PNG', 40, 60, 130, 80);
+
+    const feedbackLines = doc.splitTextToSize(document.getElementById('feedback').textContent, 160);
+    doc.setFontSize(12);
+    doc.text(feedbackLines, 20, 160);
+
+    doc.save('diagnostico_astronomia.pdf');
+});
+    </script>
+    
+</body>
+</html>

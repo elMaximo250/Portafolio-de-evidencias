@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="imagenes/boing_logo.png">
+    <title>Ayuda y Preguntas Frecuentes - Jugos Boing</title>
+    <link rel="stylesheet" type="text/css" href="Estilos_boing.css"/>
+</head>
+<body>
+
+    <header>
+        <a href="index2.html">
+            <img src="image/boing_logo.png" alt="Logo Boing">
+        </a>
+    </header>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index2.html">Volver a Inicio</a></li>
+            <li><a href="#preguntas-generales">Preguntas Generales</a></li>
+            <li><a href="#productos">Sobre Productos</a></li>
+            <li><a href="#distribucion">Distribución</a></li>
+            <li><a href="#nutricion">Nutrición</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </div>
+
+    <div class="capa1">
+        <h1>Ayuda y Preguntas Frecuentes</h1>
+        
+        <section id="preguntas-generales">
+            <h2>Preguntas Generales</h2>
+            
+            <h3>¿Dónde puedo comprar los productos Boing?</h3>
+            <p>Nuestros productos están disponibles en la mayoría de supermercados, tiendas de conveniencia y abarrotes en México. También puedes encontrarlos en nuestra tienda en línea.</p>
+            
+            <h3>¿Tienen servicio a domicilio?</h3>
+            <p>Sí, ofrecemos servicio a domicilio para pedidos mayores a 12 piezas a través de nuestro número de contacto o página web.</p>
+            
+            <h3>¿Qué horario de atención tienen?</h3>
+            <p>Nuestro centro de atención telefónica está disponible de lunes a viernes de 8:00 am a 6:00 pm, y sábados de 9:00 am a 2:00 pm.</p>
+        </section>
+
+        <section id="productos">
+            <h2>Sobre nuestros Productos</h2>
+            
+            <h3>¿Los jugos Boing contienen conservadores?</h3>
+            <p>Nuestros jugos naturales no contienen conservadores artificiales. Utilizamos procesos de pasteurización para garantizar su frescura y duración.</p>
+            
+            <h3>¿Tienen productos sin azúcar?</h3>
+            <p>Sí, contamos con una línea de productos bajos en azúcar y endulzados naturalmente con stevia. Busca nuestra etiqueta "Light" en el empaque.</p>
+            
+            <h3>¿Sus productos son aptos para veganos?</h3>
+            <p>La mayoría de nuestros jugos son 100% veganos. Solo algunos productos de la línea láctea contienen ingredientes de origen animal.</p>
+            
+            <h3>¿Cómo debo almacenar los jugos después de abrirlos?</h3>
+            <p>Recomendamos refrigerar los jugos después de abiertos y consumirlos dentro de los 3 días posteriores a su apertura.</p>
+        </section>
+
+        <section id="distribucion">
+            <h2>Distribución y Mayoreo</h2>
+            
+            <h3>¿Cómo puedo ser distribuidor de Boing?</h3>
+            <p>Puedes contactar a nuestro departamento de ventas al 55 1234 5678 ext. 203 o enviar un correo a distribucion@boing.com.mx para recibir información sobre requisitos y condiciones.</p>
+            
+            <h3>¿Hacen envíos a otros países?</h3>
+            <p>Sí, exportamos a varios países de América y Europa. Contáctanos para conocer los destinos disponibles y requisitos de importación.</p>
+            
+            <h3>¿Cuál es el pedido mínimo para mayoreo?</h3>
+            <p>El pedido mínimo es de 5 cajas (60 piezas) para entregas en zona metropolitana y 10 cajas (120 piezas) para otros estados.</p>
+        </section>
+
+        <section id="nutricion">
+            <h2>Nutrición y Salud</h2>
+            
+            <h3>¿Los jugos Boing contienen vitaminas añadidas?</h3>
+            <p>Sí, muchos de nuestros productos están fortificados con vitaminas A, C y D, así como con minerales esenciales como calcio y hierro.</p>
+            
+            <h3>¿Sus productos son aptos para personas con diabetes?</h3>
+            <p>Nuestra línea Light es adecuada para personas con diabetes, pero siempre recomendamos consultar con un nutriólogo sobre el consumo adecuado.</p>
+            
+            <h3>¿Tienen certificaciones de calidad?</h3>
+            <p>Todos nuestros productos cuentan con certificación ISO 9001, Kosher y algunos con orgánico, dependiendo de la línea.</p>
+        </section>
+
+        <section id="contacto">
+            <h2>¿No encontraste tu respuesta?</h2>
+            <p>Puedes contactarnos directamente a través de:</p>
+            <ul>
+                <li>Teléfono: 55 1234 5678</li>
+                <li>WhatsApp: 55 8765 4321</li>
+                <li>Correo electrónico: <a href="mailto:contacto@boing.com.mx">contacto@boing.com.mx</a></li>
+                <li>Redes sociales: @BoingOficial en Facebook, Twitter e Instagram</li>
+            </ul>
+            <p>Horario de atención: Lunes a viernes de 8:00 am a 6:00 pm</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Jugos Boing. Todos los derechos reservados.</p>
+    </footer>
+
+<script>
+window.addEventListener('mouseover', initLandbot, { once: true });
+window.addEventListener('touchstart', initLandbot, { once: true });
+var myLandbot;
+function initLandbot() {
+  if (!myLandbot) {
+    var s = document.createElement('script');
+    s.type = "module"
+    s.async = true;
+    s.addEventListener('load', function() {
+      myLandbot = new Landbot.Popup({
+        configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2928361-EJUMBZDO6WGB7H86/index.json',
+      });
+    });
+    s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+  }
+}
+</script>
+
+</body>
+</html>

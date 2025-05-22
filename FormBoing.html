@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog de Comentarios - Boing</title>
+  <link rel="stylesheet" type="text/css" href="Estilos_boing.css"/>
+  <script type="text/javascript" src="functionleerboing.js"></script>
+</head>
+<body>
+
+	<header>
+        <a href="index2.html">
+            <img src="image/boing_logo.png" alt="Logo Boing">
+        </a>
+    </header>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index2.html">Volver a Inicio</a></li>
+            <li><a href="#formularioB">Formulario de Ventas</a></li>
+        </ul>
+    </div>
+
+    <div class="capa1">
+		<h2>Formulario de Ventas - Boing</h2>
+
+		<section id="formularioB">
+			<form name="formularioBoing">
+			    <label for="nombre">Nombre:</label>
+			    <input type="text" id="nombre" name="nombre"> </br>
+
+			    <label for="producto">Producto:</label>
+			    <select id="producto" name="producto">
+			    	<option value="Boing de Mango">Boing de Mango</option>
+				    <option value="Boing de Guayaba">Boing de Guayaba</option>
+				    <option value="Boing de Fresa">Boing de Fresa</option>
+				    <option value="Boing de Uva">Boing de Uva</option>
+			    </select> </br>
+
+			    <label for="cantidad">Cantidad:</label>
+				<input type="number" id="cantidad" name="cantidad" min="0" value="0"> </br>
+
+			    <input type="radio" name="pago" value="Tarjeta"> Tarjeta
+			    <input type="radio" name="pago" value="PayPal"> PayPal
+			    <input type="radio" name="pago" value="OXXO"> OXXO </br>
+
+			    <input type="checkbox" id="acepto" name="acepto">
+			    Acepto los términos y condiciones </br>
+
+			    <input type="button" value="Leer datos" onclick="leerBoing()">
+			</form>
+		</section>
+
+		  <h2>Resumen de tu pedido:</h2>
+		  <div id="resultado"></div>
+	</div>
+
+	<footer>
+        <p>&copy; 2023 Jugos Boing. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

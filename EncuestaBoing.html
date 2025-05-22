@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Encuesta de Satisfacción - Jugos Boing</title>
+  <link rel="stylesheet" type="text/css" href="Estilos_boing.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script>
+    window.jsPDF = window.jspdf.jsPDF;
+  </script>
+  <script type="text/javascript" src="functionEncuesta.js"></script>
+</head>
+<body>
+
+  <header>
+    <a href="index2.html">
+      <img src="image/boing_logo.png" alt="Logo Boing">
+    </a>
+  </header>
+
+  <div class="menu">
+    <ul>
+      <li><a href="index2.html">Volver a Inicio</a></li>
+      <li><a href="#encuesta">Encuesta de Satisfacción</a></li>
+    </ul>
+  </div>
+
+  <div class="capa1">
+    <h2>Encuesta de Satisfacción - Jugos Boing</h2>
+    <p>Ayúdanos a mejorar nuestros productos y servicios respondiendo esta breve encuesta.</p>
+
+    <section id="encuesta">
+      <form name="formularioEncuesta" id="formularioEncuesta">
+        <div class="seccion-form">
+          <h3>Datos personales</h3>
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" required><br>
+          
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required><br>
+          
+          <label for="edad">Edad:</label>
+          <input type="number" id="edad" name="edad" min="12" max="99" required><br>
+          
+          <label for="frecuencia">¿Con qué frecuencia consume nuestros productos?</label>
+          <select id="frecuencia" name="frecuencia" required>
+            <option value="">Seleccione una opción</option>
+            <option value="diario">Diario</option>
+            <option value="semanal">Semanal</option>
+            <option value="mensual">Mensual</option>
+            <option value="ocasional">Ocasionalmente</option>
+          </select>
+        </div>
+
+        <div class="seccion-form">
+          <h3>Evaluación de productos</h3>
+          <p>Califique nuestros productos del 1 (muy insatisfecho) al 5 (muy satisfecho)</p>
+          
+          <label for="sabor">Sabor:</label>
+          <input type="range" id="sabor" name="sabor" min="1" max="5" value="3" oninput="actualizarValor(this)">
+          <span id="sabor-valor">3</span><br>
+          
+          <label for="calidad">Calidad:</label>
+          <input type="range" id="calidad" name="calidad" min="1" max="5" value="3" oninput="actualizarValor(this)">
+          <span id="calidad-valor">3</span><br>
+          
+          <label for="presentacion">Presentación:</label>
+          <input type="range" id="presentacion" name="presentacion" min="1" max="5" value="3" oninput="actualizarValor(this)">
+          <span id="presentacion-valor">3</span><br>
+          
+          <label for="precio">Relación calidad-precio:</label>
+          <input type="range" id="precio" name="precio" min="1" max="5" value="3" oninput="actualizarValor(this)">
+          <span id="precio-valor">3</span><br>
+        </div>
+
+        <div class="seccion-form">
+          <h3>Preguntas adicionales</h3>
+          <label>¿Qué sabores le gustaría que agregáramos?</label><br>
+          <textarea id="sabores-nuevos" name="sabores-nuevos" rows="3" cols="50"></textarea><br>
+          
+          <label>¿Dónde suele comprar nuestros productos?</label><br>
+          <input type="checkbox" id="supermercado" name="compra-lugar" value="supermercado">
+          <label for="supermercado">Supermercado</label><br>
+          <input type="checkbox" id="tienda" name="compra-lugar" value="tienda">
+          <label for="tienda">Tienda de conveniencia</label><br>
+          <input type="checkbox" id="abarrotes" name="compra-lugar" value="abarrotes">
+          <label for="abarrotes">Abarrotes</label><br>
+          <input type="checkbox" id="online" name="compra-lugar" value="online">
+          <label for="online">En línea</label><br>
+          
+          <label>¿Recomendaría nuestros productos a otros?</label><br>
+          <input type="radio" id="recomienda-si" name="recomendacion" value="si" required>
+          <label for="recomienda-si">Sí</label>
+          <input type="radio" id="recomienda-no" name="recomendacion" value="no">
+          <label for="recomienda-no">No</label><br>
+        </div>
+
+        <div class="seccion-form">
+          <input type="checkbox" id="privacidad" name="privacidad" required>
+          <label for="privacidad">Acepto la política de privacidad y el tratamiento de mis datos</label><br>
+        </div>
+
+        <input type="button" value="Calcular puntuación" onclick="calcularPuntuacion()">
+        <input type="button" value="Generar comprobante" onclick="generarPDF()">
+        <input type="reset" value="Limpiar formulario">
+      </form>
+    </section>
+
+    <h2>Resultados de la encuesta</h2>
+    <div id="resultados"></div>
+
+    <!-- Reemplazar la sección del iframe con esto: -->
+    <h2>Comprobante en PDF</h2>
+    <div id="pdf-container" style="border:1px solid #e74c3c; padding:10px; margin:10px 0;">
+      <iframe 
+        id="pdf-embed" 
+        style="width:100%; height:500px; border:none;"
+        title="Comprobante de encuesta"
+        allowfullscreen
+        webkitallowfullscreen
+      ></iframe>
+    </div>
+    <p id="pdf-message" style="color:#e74c3c; font-style:italic;"></p>
+
+  <footer>
+    <p>&copy; 2023 Jugos Boing. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

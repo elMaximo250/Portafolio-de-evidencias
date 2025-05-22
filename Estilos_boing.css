@@ -1,0 +1,145 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header 
+{
+    padding: 60px 0;
+    text-align: center;
+    background-image: url(https://th.bing.com/th/id/R.bac0d8e9e019014985405c571720aa7b?rik=UXiofi8%2b
+        KuvSTA&riu=http%3a%2f%2felespectador.mx%2fwp-content%2fuploads%2f2020%2f09%2flogo-boing-2019.png&ehk=
+        M%2fntkwhrxnicfJ8hHBJ1sN4%2fJYrimPRP8q%2boumKUNG0%3d&risl=&pid=ImgRaw&r=0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+a img 
+{
+    background-repeat: no-repeat;
+    width: 50vw;
+    height: 30vh;
+}
+
+h1 
+{
+    margin: 0;
+    font-size: 36px;
+}
+
+h2 
+{
+    margin: 0;
+    font-size: 25px;
+}
+
+.menu 
+{
+    width: 200px;
+    background-color: #e74c3c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding-top: 60px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu ul 
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li 
+{
+    margin: 0;
+}
+
+.menu ul li a 
+{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+    transition: background-color 0.3s;
+    overflow: auto;
+}
+
+.menu ul li a:hover 
+{
+    background-color: #c0392b;
+}
+
+.menu ul li a.activo 
+{
+    background-color: #f39c12;
+}
+
+.capa1 
+{
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.capa1 h2 
+{
+    color: #e74c3c;
+}
+
+.capa1 p 
+{
+    line-height: 1.6;
+}
+
+footer 
+{
+    text-align: center;
+    padding: 20px;
+    background-color: #e74c3c;
+    color: white;
+    margin-top: 20px;
+}
+
+table 
+{
+    text-align: center;
+    margin: auto; 
+    border-collapse: collapse;
+}
+
+td 
+{
+    padding: 20px;
+    vertical-align: middle;
+}
+
+td img 
+{
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    left: 7.5vw;
+}
+
+td img:hover 
+{
+    transform: scale(1.1); 
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); 
+}
+
+video{
+    width:600px; 
+    height:225px;
+}

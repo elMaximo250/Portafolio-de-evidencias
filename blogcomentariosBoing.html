@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario Boing</title>
+	<link rel="stylesheet" type="text/css" href="Estilos_boing.css"/>
+	
+</head>
+<body>
+
+<header>
+  	<a href="index2.html">
+    	<img src="image/boing_logo.png" alt="Logo Boing">
+  	</a>
+</header>
+
+<div class="menu">
+  	<ul>
+    	<li><a href="index2.html">Volver a Inicio</a></li>
+    	<li><a href="#blogcoment">Blog de Comentarios</a></li>
+  	</ul>
+</div>
+
+<div class="capa1">
+  	<h2>Blog para Comentarios - Boing</h2>
+
+  	<section id="blogcoment">
+    	<form name="comentariosBoing">
+	      <p>Nombre:<br><input type="text" name="clave" id="clave" required></p>
+	      <p>Comentario:<br><textarea name="text" id="texto" required></textarea></p>
+	      <p>¿Le pareció adecuada la página?<br>
+        <label><input type="radio" name="opinion" value="Sí" required> Sí</label>
+        <label><input type="radio" name="opinion" value="No"> No</label>
+      	</p>
+      	<p><input type="button" name="guardar" id="guardar" value="Guardar datos"></p>
+    	</form>
+  	</section>
+
+  	<h2>Comentarios:</h2>
+  	<section id="caja">
+    	No hay información disponible
+  	</section>
+
+  	<script src="localstorage.js"></script>
+
+</div>
+
+<footer>
+  <p>&copy; 2023 Jugos Boing. Todos los derechos reservados.</p>
+</footer>
+
+
+
+</body>
+</html>
